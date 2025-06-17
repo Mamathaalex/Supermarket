@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuperMarket">
+<parameter name="usernamep" value="admin1"></parameter>
+<parameter name="passwordp" value="adminn"></parameter>
+  <test thread-count="5" name="groceryapp">
+    <classes>
+      <class name="testClass.LogoutTestM">
+      <methods>
+      <include name="verifyLoginUserpasswdtest4"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- groceryapp -->
+</suite> <!-- Suite -->
